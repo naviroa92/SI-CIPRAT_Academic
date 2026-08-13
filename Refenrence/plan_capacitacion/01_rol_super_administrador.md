@@ -1,5 +1,34 @@
 # Rol: Super Administrador — Plan de Capacitación
 
+## Introducción — ¿Qué es SI-CIPRAT?
+
+SI-CIPRAT es el **Sistema de Información de la Secretaría Técnica de la Comisión Intersectorial para la Respuesta Rápida a las Alertas Tempranas**, desarrollado por el **Ministerio del Interior de Colombia**. Es la plataforma digital que centraliza el monitoreo y seguimiento a las alertas tempranas emitidas por la Defensoría del Pueblo, articulando la respuesta de las entidades del nivel central y territorial.
+
+### Contexto
+
+El Ministerio del Interior gestiona más de 100 alertas tempranas activas que deben ser monitoreadas a nivel territorial. Antes de SI-CIPRAT, esta gestión enfrentaba retos críticos:
+
+- Ausencia de una fuente de información confiable, unificada y escalable
+- Deficiencias en la comunicación entre el nivel central y el nivel territorial
+- Procesos manuales con escasa automatización, generando reprocesos y demoras
+- Acceso limitado a información en tiempo real, afectando la oportunidad en la toma de decisiones
+
+### Objetivo
+
+Garantizar la articulación entre las entidades del orden territorial, el nivel central y las subdirecciones, mediante una fuente de información unificada y alineada con la gestión y ejecución territorial de las alertas tempranas, permitiendo una coordinación eficiente, el intercambio oportuno de información y la toma de decisiones basadas en datos confiables para la prevención y atención integral de los riesgos identificados.
+
+### Funcionalidades principales
+
+- **Gestión de acceso y autenticación** — Acceso seguro por perfil con roles y permisos diferenciados por entidad
+- **Gestión y notificación de alertas tempranas** — Centraliza la recepción de alertas de la Defensoría y genera notificaciones automáticas a las entidades CIPRAT
+- **Gestión de planes de acción** — Permite crear, compartir y aprobar planes de acción con recordatorios automáticos
+- **Seguimiento y reporte de actividades** — Generación de reportes periódicos con evidencias y medición del avance de ejecución
+- **Tableros de control con georreferenciación** — Visualización en tiempo real de información georreferenciada, exportable en Excel y PDF
+- **Exportación y visualización de reportes** — Consulta de alertas en mapas y tableros integrados
+
+---
+
+
 ## Perfil del Rol
 
 | Campo | Detalle |
@@ -56,6 +85,20 @@ Al finalizar la formación, el Super Administrador podrá gestionar de forma aut
 ---
 
 ## Ruta de Aprendizaje
+
+### Módulo 0 — Contexto de la Plataforma SI-CIPRAT
+
+**Objetivo:** Que el usuario entienda el marco institucional en el que opera y el funcionamiento de SI-CIPRAT antes de comenzar a usar la plataforma.
+
+SI-CIPRAT es el **Sistema de Información de la Secretaría Técnica de la Comisión Intersectorial para la Respuesta Rápida a las Alertas Tempranas (CIPRAT)**, una plataforma desarrollada por el **Ministerio del Interior de Colombia** para centralizar y articular la gestión de las alertas tempranas emitidas por la Defensoría del Pueblo.
+
+La **Comisión Intersectorial CIPRAT** reúne a entidades del nivel central y territorial con el mandato de responder de forma coordinada y oportuna ante los escenarios de riesgo identificados en el territorio nacional. Antes de SI-CIPRAT, esta coordinación dependía de procesos manuales, comunicaciones fragmentadas y ausencia de una fuente de información unificada, lo que generaba reprocesos, demoras y dificultades para tomar decisiones basadas en datos confiables y en tiempo real.
+
+SI-CIPRAT resuelve estos retos al ofrecer un espacio digital común donde la Defensoría del Pueblo emite alertas tempranas, el Ministerio del Interior las gestiona y emite recomendaciones, y las entidades territoriales responden con planes de acción concretos que son monitoreados, aprobados y seguidos a lo largo de todo su ciclo de vida. Cada actor del ecosistema —Defensoría, Ministerio, entidades centrales, subdirecciones y monitores— tiene un rol definido dentro de la plataforma, con acceso segmentado según sus responsabilidades.
+
+El objetivo central del sistema es garantizar la articulación entre todos estos niveles mediante una fuente de información unificada, que permita una coordinación eficiente, el intercambio oportuno de información y la toma de decisiones basadas en datos confiables para la prevención y atención integral de los riesgos identificados en el territorio.
+
+---
 
 ### Módulo 1 — Acceso y Configuración de Cuenta
 - Proceso de autenticación con 2FA (código de 4 dígitos, JWT 24h)
