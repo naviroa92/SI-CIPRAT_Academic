@@ -2217,7 +2217,7 @@ body.role-focus .detail-body>aside .side-block ul {
   font-size: .9rem;
 }
 
-.detail .lesson .steps h5 {
+.detail .lesson .steps h4 {
   margin: 0 0 8px;
   font-size: .86rem;
   color: var(--ink);
@@ -2470,7 +2470,7 @@ body.role-focus .detail-body>aside .side-block ul {
 }
 
 .detail .lesson .steps .simple-table table {
-  min-width: 480px;
+  min-width: 0;
   width: 100%;
   margin: 0;
   border-collapse: collapse;
@@ -3312,6 +3312,21 @@ textarea:focus-visible,
   box-shadow: none !important;
 }
 
+/* 1.4.10 Reflow: las columnas de la ruta pueden encogerse y las tablas no se salen del ancho disponible.
+   Sin esto, la tabla de permisos o un correo largo ensanchan la columna y .detail recorta el texto en celular. */
+.detail-body>* {
+  min-width: 0;
+}
+
+.detail table {
+  max-width: 100%;
+}
+
+.detail td,
+.detail th {
+  overflow-wrap: break-word;
+}
+
 /* 1.4.10 Reflow: en celular, cada fila de las tablas de pasos se muestra como tarjeta. */
 @media (max-width: 600px) {
   .simple-table {
@@ -3349,6 +3364,11 @@ textarea:focus-visible,
     padding: 4px 0;
     border: 0;
     text-align: left;
+  }
+
+  /* En tarjeta la celda ocupa todo el ancho: solo se parte lo que no cabe, como un correo largo. */
+  .detail .lesson .steps .simple-table td {
+    overflow-wrap: anywhere;
   }
 
   .simple-table td:empty {
