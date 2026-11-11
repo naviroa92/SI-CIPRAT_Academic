@@ -2296,7 +2296,7 @@ body.role-focus .detail-body>aside .side-block ul {
 
 .check-list small {
   display: block;
-  color: var(--neutral-51);
+  color: var(--neutral-39);
 }
 
 .activity-list {
@@ -2348,7 +2348,7 @@ body.role-focus .detail-body>aside .side-block ul {
 }
 
 .activity-meta {
-  color: var(--neutral-51);
+  color: var(--neutral-39);
   font-size: .76rem;
   white-space: nowrap;
 }
@@ -2548,7 +2548,7 @@ body.role-focus .detail-body>aside .side-block ul {
 }
 
 .detail .lesson .steps .activity-meta {
-  color: var(--neutral-51);
+  color: var(--neutral-39);
   font-size: .76rem;
   white-space: nowrap;
 }
@@ -3195,7 +3195,7 @@ a.route-note__link {
 
 small.module-kicker {
   display: block;
-  color: var(--rose-81);
+  color: var(--brand);
   font-weight: 850;
   font-size: .68rem;
   letter-spacing: .1em;
@@ -3204,7 +3204,7 @@ small.module-kicker {
 
 small.module-goal-label {
   display: block;
-  color: var(--rose-75);
+  color: var(--brand);
   font-size: .72rem;
   font-weight: 800;
   margin-top: 8px;
@@ -3262,4 +3262,120 @@ input.glossary-search {
   border: 1px solid var(--border);
   border-radius: 6px;
   font: inherit;
+}
+
+/* Accesibilidad (Resolución 1519 de 2020, Anexo 1; WCAG 2.1 AA). */
+
+/* 2.4.1 Saltar bloques: enlace oculto que aparece al recibir el foco. */
+.skip-link {
+  position: absolute;
+  left: 12px;
+  top: -60px;
+  z-index: 100;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: var(--brand);
+  color: var(--white);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 12px;
+}
+
+main:focus {
+  outline: 0;
+}
+
+/* 2.4.7 Foco visible: anillo de marca con halo blanco, para fondos claros y oscuros. */
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid var(--brand) !important;
+  outline-offset: 2px !important;
+  box-shadow: 0 0 0 5px var(--white) !important;
+}
+
+/* El buscador muestra el foco en su caja completa, no en el campo interno. */
+.help-search:focus-within {
+  outline: 3px solid var(--brand);
+  outline-offset: 2px;
+}
+
+.help-search input:focus-visible {
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+/* 1.4.10 Reflow: en celular, cada fila de las tablas de pasos se muestra como tarjeta. */
+@media (max-width: 600px) {
+  .simple-table {
+    overflow-x: visible;
+  }
+
+  .simple-table table,
+  .detail .lesson .steps .simple-table table {
+    min-width: 0;
+    width: 100%;
+    border: 0;
+  }
+
+  .simple-table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  .simple-table tr {
+    display: block;
+    margin: 0 0 10px;
+    padding: 8px 10px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--surface);
+  }
+
+  .simple-table td,
+  .detail .lesson .steps .simple-table td {
+    display: block;
+    padding: 4px 0;
+    border: 0;
+    text-align: left;
+  }
+
+  .simple-table td:empty {
+    display: none;
+  }
+
+  .simple-table td[data-label]::before {
+    content: attr(data-label);
+    display: block;
+    color: var(--neutral-39);
+    font-size: .72rem;
+    font-weight: 800;
+    letter-spacing: .03em;
+    text-transform: uppercase;
+  }
+}
+
+/* 2.3.3 Animación por interacción: respeta la preferencia de movimiento reducido. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+  }
 }
