@@ -682,43 +682,6 @@ body {
   margin: 18px 0 24px;
 }
 
-.help-search {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  background: var(--white);
-  border: 1px solid var(--blue-80);
-  border-radius: 999px;
-  padding: 8px 9px 8px 19px;
-  box-shadow: 0 8px 20px var(--blue-27-a4);
-}
-
-.help-search span {
-  color: var(--brand);
-  font-size: 1.2rem;
-}
-
-.help-search input {
-  font: inherit;
-  border: 0;
-  outline: 0;
-  min-width: 0;
-  flex: 1;
-  color: var(--ink);
-}
-
-.help-search button {
-  border: 0;
-  border-radius: 999px;
-  background: var(--brand);
-  color: var(--white);
-  padding: 10px 17px;
-  font: inherit;
-  font-size: .84rem;
-  font-weight: 800;
-  cursor: pointer;
-}
-
 .help-suggestions {
   display: flex;
   flex-wrap: wrap;
@@ -855,9 +818,6 @@ body {
   .help-hero {
     padding: 30px 22px;
     border-radius: 18px;
-  }
-  .help-search button {
-    padding: 9px 11px;
   }
   .help-art {
     display: none;
@@ -1189,18 +1149,6 @@ body {
   max-width: 570px;
   font-size: 1rem;
   line-height: 1.6;
-}
-
-.help-search {
-  border-radius: 12px;
-  padding: 7px 8px 7px 17px;
-  border-color: var(--gray-83);
-  box-shadow: none;
-}
-
-.help-search button {
-  border-radius: 8px;
-  padding: 10px 18px;
 }
 
 .help-suggestions button {
@@ -1555,9 +1503,6 @@ body.role-focus .detail .lesson details {
   }
   .help-hero {
     min-height: 0;
-  }
-  .help-search {
-    border-radius: 10px;
   }
   .detail .lesson-list {
     padding-left: 30px;
@@ -2957,9 +2902,6 @@ body.role-focus .detail span.focus-tag.is-limit,
   .help-hero {
     grid-template-columns: minmax(0,1fr);
   }
-  .help-search input {
-    width: 100%;
-  }
   .route-side {
     display: flex;
     gap: 8px;
@@ -3254,15 +3196,6 @@ textarea:focus-visible,
 }
 
 /* El buscador muestra el foco en su caja completa, no en el campo interno. */
-.help-search:focus-within {
-  outline: 3px solid var(--brand);
-  outline-offset: 2px;
-}
-
-.help-search input:focus-visible {
-  outline: 0 !important;
-  box-shadow: none !important;
-}
 
 /* 1.4.10 Reflow: las columnas de la ruta pueden encogerse y las tablas no se salen del ancho disponible.
    Sin esto, la tabla de permisos o un correo largo ensanchan la columna y .detail recorta el texto en celular. */
@@ -3509,7 +3442,6 @@ main a:not(.btn):not(.top-cta):hover {
 /* Botón GOV.CO: normal, hover, foco y deshabilitado. */
 .btn,
 .top-cta,
-.help-search button,
 .role-back,
 body .detail .role-back {
   display: inline-flex;
@@ -3531,20 +3463,16 @@ body .detail .role-back {
   box-shadow: none;
   transition: background-color .15s, box-shadow .15s;
 }
-
 .btn:hover,
 .top-cta:hover,
-.help-search button:hover,
 .role-back:hover,
 body .detail .role-back:hover {
   background: var(--govco-cobalt);
   color: var(--white);
   border: 0;
 }
-
 .btn:focus-visible,
 .top-cta:focus-visible,
-.help-search button:focus-visible,
 .role-back:focus-visible,
 body .detail .role-back:focus-visible {
   outline: none;
@@ -3552,7 +3480,6 @@ body .detail .role-back:focus-visible {
   color: var(--white);
   box-shadow: 0 0 0 2px var(--white), 0 0 0 4px var(--govco-dark);
 }
-
 .btn:disabled,
 .btn[aria-disabled="true"] {
   background: var(--gray-83);
@@ -3575,14 +3502,6 @@ body .detail .role-back:focus-visible {
   background: var(--govco-blue);
   color: var(--white);
   border-color: var(--govco-blue);
-}
-
-.help-search {
-  border-radius: 8px;
-}
-
-.help-search button {
-  border-radius: 999px;
 }
 
 /* Tarjetas de ruta con el patrón de tarjeta GOV.CO. */
