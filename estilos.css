@@ -3727,9 +3727,7 @@ small.module-goal-label,
 
 .footer-logos .footer-ministry {
   display: inline-flex;
-  padding: 8px;
-  border-radius: 6px;
-  background: var(--white);
+  border-radius: 4px;
 }
 
 .footer-logos .footer-ministry img {
@@ -4212,4 +4210,9 @@ main .detail .lesson .steps .phase-step .step-n:not(#_) {
 .role-card h3:not(#_),
 .module h3:not(#_) {
   font-size: 1.375rem;
+}
+
+/* El correo largo del pie parte línea en vez de salirse de la columna. */
+.site-footer a[href^="mailto:"] {
+  overflow-wrap: anywhere;
 }
