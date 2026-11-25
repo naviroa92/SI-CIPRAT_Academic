@@ -4,14 +4,27 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Academia SI-CIPRAT: rutas de capacitación priorizadas por rol.">
-  <title>Academia SI-CIPRAT | Rutas por rol</title>
-  <link rel="stylesheet" href="estilos.css?v=2026-11-11c">
+  <title>Documentación SI-CIPRAT - Ministerio del Interior</title>
+  <link rel="icon" href="assets/favicon-mininterior.ico?v=2026-11-26" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/favicon-mininterior.ico?v=2026-11-26" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Work+Sans:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="estilos.css?v=2026-11-26l">
 </head>
 <body>
   <a class="skip-link" href="#inicio">Saltar al contenido</a>
-  <header class="top"><div class="wrap"><a class="logo" href="#inicio"><b>S</b>SI-CIPRAT Academia</a><nav class="nav"><a href="#roles">Mi ruta por rol</a><a href="#plataforma">Plataforma</a><a href="#modulos">Módulos</a></nav><span class="top-tag">9 rutas disponibles</span><a class="top-cta" href="https://polite-wave-005a5910f.3.azurestaticapps.net/signin" target="_blank" rel="noopener">Entrar a SI-CIPRAT ↗</a></div></header>
+  <div class="a11y-bar" role="toolbar" aria-label="Opciones de accesibilidad" aria-orientation="vertical">
+    <button type="button" data-a11y="contrast" aria-label="Contraste" aria-pressed="false" title="Cambiar niveles de contraste"><span class="a11y-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"/></svg></span><span class="a11y-tip">Contraste</span></button>
+    <button type="button" data-a11y="smaller" aria-label="Reducir letra" title="Reducir el tamaño del texto"><span class="a11y-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M3.5 19.5 9 5h2l5.5 14.5M5.6 14h8.8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/><path d="M16.5 5.5h5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></span><span class="a11y-tip">Reducir letra</span></button>
+    <button type="button" data-a11y="bigger" aria-label="Aumentar letra" title="Aumentar el tamaño del texto"><span class="a11y-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M3.5 19.5 9 5h2l5.5 14.5M5.6 14h8.8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/><path d="M16.5 5.5h5M19 3v5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></span><span class="a11y-tip">Aumentar letra</span></button>
+  </div>
+  <button type="button" class="to-top" data-a11y="top" aria-label="Volver arriba" title="Volver arriba"></button>
+  <div class="govco-bar"><div class="wrap"><a class="govco-logo" href="https://www.gov.co/home/" target="_blank" rel="noopener" title="Ir al portal del Estado colombiano GOV.CO (abre en una pestaña nueva)"><img src="assets/logo-govco.png" alt="GOV.CO" width="131" height="40"></a><a class="govco-link" href="https://www.mininterior.gov.co/" target="_blank" rel="noopener" title="Ir al sitio del Ministerio del Interior (abre en una pestaña nueva)">Inicio Mininterior</a></div></div>
+  <div class="brand-row"><div class="wrap"><a class="brand-ministry" href="#inicio" title="Ir al inicio de la Academia SI-CIPRAT"><img src="assets/logo-ministerio-interior.png" alt="Ministerio del Interior, inicio de la Academia SI-CIPRAT" width="95" height="95"></a><a class="top-cta btn top-cta--mobile" href="https://polite-wave-005a5910f.3.azurestaticapps.net/signin" target="_blank" rel="noopener" title="Abre la plataforma SI-CIPRAT en una pestaña nueva">Entrar a SI-CIPRAT ↗</a></div></div>
+  <header class="top"><div class="wrap"><nav class="nav" aria-label="Menú principal"><a href="#inicio" title="Ir al inicio de la Academia" aria-current="page">Inicio</a><a href="#roles" title="Ver las rutas de aprendizaje por rol">Mi ruta por rol</a><a href="#plataforma" title="Ver el contexto de la plataforma SI-CIPRAT">Plataforma</a><a href="#modulos" title="Ver los módulos de SI-CIPRAT">Módulos</a></nav><a class="top-cta btn" href="https://polite-wave-005a5910f.3.azurestaticapps.net/signin" target="_blank" rel="noopener" title="Abre la plataforma SI-CIPRAT en una pestaña nueva">Entrar a SI-CIPRAT ↗</a></div></header>
   <main id="inicio" tabindex="-1">
-    <section class="help-home"><div class="wrap"><div class="help-hero"><div><p class="eyebrow">Centro de ayuda · SI-CIPRAT</p><h1>Encuentra la ruta<br>para <em>tu rol.</em></h1><p class="intro">Aprende paso a paso lo que necesitas hacer en SI-CIPRAT según el rol que te asignaron.</p><form class="help-search" onsubmit="event.preventDefault();filterRoles(this.querySelector('input').value)"><span aria-hidden="true">⌕</span><input aria-label="Buscar una ruta por rol" placeholder="Busca por rol, alcance o tarea" oninput="filterRoles(this.value)"><button type="submit">Buscar</button></form><div class="help-suggestions"><button type="button" onclick="filterRoles('administrador')">Administración</button><button type="button" onclick="filterRoles('monitor')">Monitor</button><button type="button" onclick="filterRoles('entidad')">Entidad territorial</button><button type="button" onclick="filterRoles('consulta')">Solo consulta</button></div></div><figure class="help-art"><img src="Refenrence/resources/img_home.png" alt="Vista de la plataforma SI-CIPRAT"></figure></div></div></section>
+    <section class="help-home"><div class="wrap"><div class="help-hero"><div><p class="eyebrow">Centro de ayuda · SI-CIPRAT</p><h1>Encuentra la ruta<br>para <em>tu rol.</em></h1><p class="intro">Aprende paso a paso lo que necesitas hacer en SI-CIPRAT según el rol que te asignaron.</p><form class="help-search" onsubmit="event.preventDefault();filterRoles(this.querySelector('input').value)"><span aria-hidden="true">⌕</span><input aria-label="Buscar una ruta por rol" placeholder="Busca por rol, alcance o tarea" oninput="filterRoles(this.value)"><button type="submit">Buscar</button></form><div class="help-suggestions"><button type="button" onclick="filterRoles('administrador')">Administración</button><button type="button" onclick="filterRoles('monitor')">Monitor</button><button type="button" onclick="filterRoles('entidad')">Entidad territorial</button><button type="button" onclick="filterRoles('consulta')">Solo consulta</button></div></div><figure class="help-art"><img src="assets/vista-inicio-plataforma-si-ciprat.png" alt="Vista de la página de inicio de la plataforma SI-CIPRAT"></figure></div></div></section>
     <section class="section help-roles" id="roles"><div class="wrap"><div class="section-head"><div><p class="eyebrow">Rutas de aprendizaje</p><h2>Explora por perfil.</h2></div><p>Elige el rol que te asignaron. Verás qué puedes hacer, cómo hacerlo y cómo saber que ya lo dominas.</p></div>
       <div class="role-grid" id="roleCards"></div>
       <article class="detail" id="roleDetail" aria-live="polite"></article>
@@ -26,8 +39,44 @@
         <li><span class="flow-n">5</span><h4>Seguimiento y cierre</h4><p class="flow-who">Ministerio del Interior · Defensoría del Pueblo</p><p>El Ministerio consolida el avance. La Defensoría emite informes de seguimiento u oficios de consumación, que se cargan en SI-CIPRAT hasta el cierre de la alerta.</p></li>
       </ol></div></section>
     <section class="section" id="modulos"><div class="wrap"><div class="section-head"><div><p class="eyebrow">Mapa de contenidos</p><h2>Módulos de SI-CIPRAT.</h2></div><p>Tu ruta por rol indica cuáles de estos módulos puedes consultar, gestionar o aprobar.</p></div><div class="modules"><article class="module"><span>01</span><h3>Acceso a la plataforma</h3><p>Activación de la cuenta, inicio de sesión con código de verificación y perfil.</p></article><article class="module"><span>02</span><h3>Inicio</h3><p>Indicadores, alertas recientes, avance global y mapa de municipios.</p></article><article class="module"><span>03</span><h3>Usuarios y entidades</h3><p>Invitaciones, usuarios, roles, entidades y subdirecciones.</p></article><article class="module"><span>04</span><h3>Agentes IA</h3><p>Lectura asistida de documentos para crear alertas en borrador.</p></article><article class="module"><span>05</span><h3>Alertas tempranas</h3><p>Registro, consulta, edición, cierre e historial de las alertas.</p></article><article class="module"><span>06</span><h3>Recomendaciones</h3><p>Recomendaciones de cada alerta y sus entidades responsables.</p></article><article class="module"><span>07</span><h3>Planes de acción</h3><p>Actividades que formulan las entidades para cada recomendación.</p></article><article class="module"><span>08</span><h3>Seguimiento</h3><p>Revisión, aprobación y confirmación de planes e informes de ejecución.</p></article><article class="module"><span>09</span><h3>Informe de recomendaciones</h3><p>Consolidado de las recomendaciones y su avance.</p></article><article class="module"><span>10</span><h3>Reportes</h3><p>Consultas de ejecución y carga de reportes para aprobación.</p></article><article class="module"><span>11</span><h3>Informes de seguimiento</h3><p>Informes formales de seguimiento a las alertas.</p></article><article class="module"><span>12</span><h3>Oficios de consumación</h3><p>Oficios que registran la consumación del riesgo.</p></article><article class="module"><span>13</span><h3>Notificaciones</h3><p>Historial de actividad de las alertas de tu alcance.</p></article><article class="module"><span>14</span><h3>Tareas automáticas</h3><p>Recordatorios y vencimientos que el sistema revisa cada día.</p></article></div></div></section>
+    <section class="section a11y-statement" id="accesibilidad" aria-labelledby="accesibilidad-titulo"><div class="wrap">
+      <div class="section-head"><div><p class="eyebrow">Accesibilidad</p><h2 id="accesibilidad-titulo">Accesibilidad de la Academia.</h2></div><p>Esta página sigue los lineamientos de la Resolución 1519 de 2020 y el nivel AA de las pautas de accesibilidad web.</p></div>
+      <ul class="a11y-list">
+        <li><strong>Barra de accesibilidad.</strong> A la derecha de la pantalla puede activar el alto contraste y aumentar o reducir el tamaño de la letra. La Academia recuerda su elección en este navegador.</li>
+        <li><strong>Teclado.</strong> Todo se puede usar con la tecla Tab; el elemento activo siempre se ve resaltado. El primer enlace, "Saltar al contenido", lleva directo al contenido.</li>
+        <li><strong>Lectores de pantalla.</strong> Las imágenes tienen texto alternativo, los enlaces indican a dónde llevan y los botones tienen nombre.</li>
+        <li><strong>Lectura.</strong> Los textos cumplen el contraste mínimo AA y ninguno mide menos de 12 px.</li>
+        <li><strong>¿Encontró una barrera?</strong> Escriba a <a href="mailto:servicioalciudadano@mininterior.gov.co">servicioalciudadano@mininterior.gov.co</a> indicando la página y el problema.</li>
+      </ul>
+    </div></section>
   </main>
-  <footer class="footer"><div class="wrap"><strong>SI-CIPRAT Academia</strong><p>Nueve rutas de capacitación, una por cada rol y subrol de la plataforma.</p><div class="foot-bottom">Ministerio del Interior de Colombia · SI-CIPRAT</div></div></footer>
+  <footer class="site-footer"><div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-logos">
+        <a class="footer-ministry" href="https://www.mininterior.gov.co/" target="_blank" rel="noopener" title="Ministerio del Interior (abre en una pestaña nueva)"><img src="assets/logo-ministerio-interior.png" alt="Ministerio del Interior" width="72" height="73"></a>
+        <a class="footer-govco" href="https://www.gov.co/home/" target="_blank" rel="noopener" title="Portal del Estado colombiano GOV.CO (abre en una pestaña nueva)"><img src="assets/logo-govco.png" alt="GOV.CO" width="118" height="36"></a>
+        <span class="footer-co"><img src="assets/logo-marca-co.png" alt="Marca país Colombia" width="45" height="44"></span>
+      </div>
+      <div>
+        <p class="footer-title">SI-CIPRAT Academia</p>
+        <p>Rutas de capacitación de SI-CIPRAT, una por cada rol y subrol de la plataforma.</p>
+        <p><strong>Ministerio del Interior · Sede principal La Giralda</strong><br>Dirección: Carrera 8 No. 7 – 83, Bogotá D.C.<br>Código postal: 111711<br>Horario de atención: lunes a viernes de 8:00 a.m. a 4:00 p.m.</p>
+        <p class="footer-links"><a href="https://twitter.com/MinInterior" target="_blank" rel="noopener" title="Ministerio del Interior en X (abre en una pestaña nueva)">X @MinInterior</a><a href="https://www.facebook.com/MinInterior/" target="_blank" rel="noopener" title="Ministerio del Interior en Facebook (abre en una pestaña nueva)">Facebook</a><a href="https://www.instagram.com/mininterior" target="_blank" rel="noopener" title="Ministerio del Interior en Instagram (abre en una pestaña nueva)">Instagram</a><a href="https://www.youtube.com/c/MininteriorGovCol" target="_blank" rel="noopener" title="Ministerio del Interior en YouTube (abre en una pestaña nueva)">YouTube</a></p>
+      </div>
+      <div>
+        <p class="footer-title">Contacto</p>
+        <ul class="footer-list">
+          <li>Teléfono conmutador: <a href="tel:+576012427400" title="Llamar al conmutador del Ministerio del Interior">+57 601 242 74 00</a></li>
+          <li>Línea de quejas y reclamos: 018000 91 04 03</li>
+          <li>Línea anticorrupción: 018000 91 04 03</li>
+          <li>Correo institucional: <a href="mailto:servicioalciudadano@mininterior.gov.co" title="Escribir al correo de servicio al ciudadano">servicioalciudadano@mininterior.gov.co</a></li>
+        </ul>
+        <p class="footer-links"><a href="https://www.mininterior.gov.co/politica-general-de-seguridad-de-la-informacion/" target="_blank" rel="noopener" title="Política de seguridad de la información (abre en una pestaña nueva)">Políticas</a><a href="https://www.mininterior.gov.co/mapa-del-sitio/" target="_blank" rel="noopener" title="Mapa del sitio del Ministerio del Interior (abre en una pestaña nueva)">Mapa del sitio</a><a href="https://www.mininterior.gov.co/terminos-y-condiciones/" target="_blank" rel="noopener" title="Términos y condiciones (abre en una pestaña nueva)">Términos y condiciones</a><a href="#accesibilidad" title="Ver la accesibilidad de la Academia">Accesibilidad</a></p>
+      </div>
+    </div>
+    <p class="footer-bottom">© Ministerio del Interior de Colombia · SI-CIPRAT Academia</p>
+  </div></footer>
+
   <script src="roles.js?v=2026-11-11"></script>
   <script src="contexto_por_rol.js?v=2026-11-11"></script>
   <script>
@@ -60,7 +109,7 @@
     function coverPosition(index){const slot=Math.min(index,7);const x=[0,33.33,66.66,100][slot%4];const y=slot<4?0:100;return `${x}% ${y}%`;}
     function roleSlug(i){return roles[i].name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/(^-|-$)/g,'');}
     function renderRoleCards(){cards.innerHTML=roles.map((role,index)=>`<button class="role-card" type="button"><span class="num">${role.n} · ${role.scope}</span><h3>${role.name}</h3><p>${role.tag}</p></button>`).join('');cards.querySelectorAll('.role-card').forEach((card,index)=>{card.style.setProperty('--cover-position',coverPosition(index));card.onclick=()=>openRole(index);});}
-    function exitRoleView(){const closed=detail.id.replace(/^ruta-/,'');document.body.classList.remove('role-focus');detail.hidden=true;detail.innerHTML='';detail.removeAttribute('id');renderRoleCards();history.pushState(null,'',window.location.pathname);window.scrollTo({top:0,behavior:'smooth'});const back=roles.findIndex((role,index)=>roleSlug(index)===closed);const card=cards.querySelectorAll('.role-card')[back];if(card)card.focus({preventScroll:true});}
+    function exitRoleView(target){const dest=typeof target==='string'?target:'roles';const closed=detail.id.replace(/^ruta-/,'');document.body.classList.remove('role-focus');detail.hidden=true;detail.innerHTML='';detail.removeAttribute('id');renderRoleCards();history.pushState(null,'',window.location.pathname+(dest==='inicio'?'':'#'+dest));if(dest==='roles'){const back=roles.findIndex((role,index)=>roleSlug(index)===closed);const card=cards.querySelectorAll('.role-card')[back];if(card)card.focus({preventScroll:true});}if(dest==='inicio')window.scrollTo({top:0,behavior:'smooth'});else goToSection(dest);}
     function openRole(i){detail.hidden=false;showRole(i);const slug=roleSlug(i);detail.id=`ruta-${slug}`;document.body.classList.add('role-focus');history.pushState(null,'',`${window.location.pathname}?rol=${slug}`);window.scrollTo({top:0,behavior:'smooth'});const heading=detail.querySelector('h2');if(heading){heading.setAttribute('tabindex','-1');heading.focus({preventScroll:true});}}
     const renderWithAssets=showRole;
     showRole=function(i){renderWithAssets(i);cards.querySelectorAll('.role-card').forEach((card,n)=>{card.style.setProperty('--cover-position',coverPosition(n));card.onclick=()=>openRole(n);});const body=detail.querySelector('.detail-body');detail.querySelectorAll('.lesson').forEach((lesson,n)=>{lesson.id=`paso-${n+1}`;const lessonBox=lesson.querySelector(':scope>div');if(lessonBox)lessonBox.style.setProperty('--lesson-cover-position',coverPosition((i+n)%8));});if(body){const sidebar=document.createElement('nav');sidebar.className='route-side';sidebar.innerHTML=`<strong>En esta ruta</strong>${roles[i].lessons.map((lesson,n)=>`<button type="button" data-step="paso-${n+1}">${moduleNumber(n)} · ${lesson[0]}</button>`).join('')}`;sidebar.querySelectorAll('button').forEach(button=>button.onclick=()=>document.getElementById(button.dataset.step).scrollIntoView({behavior:'smooth',block:'center'}));body.prepend(sidebar);const back=document.createElement('button');back.className='role-back';back.type='button';back.textContent='← Volver a la Academia';back.onclick=exitRoleView;detail.querySelector('.detail-top>div').prepend(back);}};
@@ -147,13 +196,41 @@
     const renderWithRouteSpy=showRole;
     showRole=function(i){renderWithRouteSpy(i);detail.querySelectorAll('.route-side button[data-step]').forEach(button=>button.onclick=()=>goToSection(button.dataset.step));requestAnimationFrame(updateRouteSpy);};
     /* Logo y menú superior: desde una ruta abierta, vuelven al inicio de la Academia (y a la sección pedida). */
-    document.querySelectorAll('.top a[href^="#"]').forEach(link=>link.addEventListener('click',event=>{event.preventDefault();const id=link.getAttribute('href').slice(1);if(document.body.classList.contains('role-focus'))exitRoleView();if(id==='inicio'){window.scrollTo({top:0,behavior:'smooth'});return;}setTimeout(()=>goToSection(id),60);}));
+    document.querySelectorAll('.top a[href^="#"], .brand-row a[href^="#"], .site-footer a[href^="#"]').forEach(link=>link.addEventListener('click',event=>{event.preventDefault();const id=link.getAttribute('href').slice(1);if(document.body.classList.contains('role-focus')){exitRoleView(id);return;}if(id==='inicio'){window.scrollTo({top:0,behavior:'smooth'});return;}setTimeout(()=>goToSection(id),60);}));
     window.addEventListener('popstate',()=>{const slug=new URLSearchParams(window.location.search).get('rol');const index=roles.findIndex((role,n)=>roleSlug(n)===slug);if(index>=0){detail.hidden=false;showRole(index);document.body.classList.add('role-focus');}else if(document.body.classList.contains('role-focus')){document.body.classList.remove('role-focus');detail.hidden=true;detail.innerHTML='';renderRoleCards();}});
     /* Todo enlace que sale de la Academia (la plataforma, los documentos completos) se abre en otra pestaña. */
     document.addEventListener('click',event=>{const link=event.target.closest('a[href]');if(!link)return;const url=new URL(link.href,location.href);const external=url.origin!==location.origin||/\.(md|pdf)$/i.test(url.pathname);if(!external)return;link.target='_blank';link.rel='noopener';},true);
     const selectedRole=new URLSearchParams(window.location.search).get('rol');
     const selectedIndex=roles.findIndex((role,n)=>roleSlug(n)===selectedRole);
     if(selectedIndex>=0)openRole(selectedIndex);else{detail.hidden=true;renderRoleCards();}
+  
+    /* Barra de accesibilidad: tamaño de letra, alto contraste y volver arriba. La preferencia se recuerda en este navegador. */
+    (function(){const KEY='academia-accesibilidad';const sizes=[87.5,100,112.5,125,137.5];const root=document.documentElement;let state={size:1,contrast:false};
+      try{state=Object.assign(state,JSON.parse(localStorage.getItem(KEY)||'{}'));}catch(e){}
+      const bar=document.querySelector('.a11y-bar');if(!bar)return;const btn=name=>bar.querySelector(`[data-a11y="${name}"]`);
+      function apply(){state.size=Math.max(0,Math.min(sizes.length-1,state.size|0));root.style.fontSize=state.size===1?'':sizes[state.size]+'%';root.classList.toggle('alto-contraste',!!state.contrast);
+        btn('contrast').setAttribute('aria-pressed',String(!!state.contrast));btn('smaller').setAttribute('aria-disabled',String(state.size===0));btn('bigger').setAttribute('aria-disabled',String(state.size===sizes.length-1));
+        try{localStorage.setItem(KEY,JSON.stringify(state));}catch(e){}}
+      const toTop=document.querySelector('.to-top');if(toTop){toTop.addEventListener('click',()=>{window.scrollTo({top:0,behavior:'smooth'});const skip=document.querySelector('.skip-link');if(skip)skip.focus({preventScroll:true});});const showTop=()=>toTop.classList.toggle('is-visible',window.scrollY>400);window.addEventListener('scroll',showTop,{passive:true});showTop();}
+      bar.addEventListener('click',event=>{const b=event.target.closest('button');if(!b)return;const action=b.dataset.a11y;
+        if(action==='smaller'&&state.size>0)state.size--;else if(action==='bigger'&&state.size<sizes.length-1)state.size++;else if(action==='contrast')state.contrast=!state.contrast;
+        else if(action==='top'){window.scrollTo({top:0,behavior:'smooth'});const skip=document.querySelector('.skip-link');if(skip)skip.focus({preventScroll:true});return;}
+        apply();});
+      apply();})();
+    /* Todo enlace lleva un title que dice a dónde lleva (FURAG). */
+    (function(){function describe(a){const text=a.textContent.replace(/[↗→←]/g,'').replace(/\s+/g,' ').trim();const href=a.getAttribute('href')||'';let title=text;
+        if(href.startsWith('#'))title=text?`Ir a ${text}`:'Ir a la sección';else if(href.startsWith('mailto:'))title=`Escribir a ${href.slice(7)}`;else if(/\.md$/i.test(href))title='Abrir el documento completo de la ruta';
+        else if(/azurestaticapps\.net/.test(href))title='Abrir la plataforma SI-CIPRAT';
+        if(a.target==='_blank'&&!/pestaña nueva/.test(title))title+=' (abre en una pestaña nueva)';return title;}
+      function titleLinks(){document.querySelectorAll('a[href]:not([title])').forEach(a=>{a.title=describe(a);});}
+      let pending=false;new MutationObserver(()=>{if(pending)return;pending=true;setTimeout(()=>{pending=false;titleLinks();},30);}).observe(document.body,{childList:true,subtree:true});titleLinks();})();
+  
+    /* Menú principal: marca la sección que se está viendo, como en mininterior.gov.co. */
+    (function(){const links=[...document.querySelectorAll('.top .nav a')];if(!links.length)return;
+      function current(){if(document.body.classList.contains('role-focus'))return '#roles';const line=document.querySelector('.top').getBoundingClientRect().bottom+120;let id='#inicio';['roles','plataforma','modulos'].forEach(s=>{const el=document.getElementById(s);if(el&&el.getBoundingClientRect().top<=line)id='#'+s;});return id;}
+      let ticking=false;function update(){ticking=false;const id=current();links.forEach(a=>{if(a.getAttribute('href')===id)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});}
+      window.addEventListener('scroll',()=>{if(!ticking){ticking=true;requestAnimationFrame(update);}},{passive:true});
+      new MutationObserver(update).observe(document.body,{attributes:true,attributeFilter:['class']});update();})();
   </script>
 </body>
 </html>
